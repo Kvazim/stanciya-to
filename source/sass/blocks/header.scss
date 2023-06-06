@@ -1,13 +1,13 @@
 .header {
-  padding: 28px 0;
+  padding: size(30px) 0;
 
-  background-color: $color-neon-blue;
+  background: $venetian-red-to-dark-cerulean-conic-desktop;
 
-  .container {
-    display: flex;
+  @include vp-1023 {
+    background: $venetian-red-to-dark-cerulean-conic-tablet;
   }
 
-  &__logo {
-    color: $color-default-white;
+  @include vp-767 {
+    background: $venetian-red-to-dark-cerulean-conic-mobile;
   }
 }

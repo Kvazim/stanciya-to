@@ -10,7 +10,27 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="description", content="ProjectName — описание")
+    meta(name="description", content!= description)
+    meta(name="theme-color", content="#b80027")
+    meta(name="msapplication-config", content="./img/favicon/browserconfig.xml")
+    <link rel="icon" href="./img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" href="./img/favicon/apple-icon.png">
+    <link rel="manifest" href="./img/favicon/manifest.webmanifest" crossorigin="use-credentials">
+    <link rel="preload" href="./fonts/alumnisans-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/robotocondensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/robotocondensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    link(rel="stylesheet", href="css/style.min.css")
+
+  //- <link rel="icon" href="./img/favicon/favicon.ico">
+  //- <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  //- <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  //- <link rel="icon" type="image/png" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+  //- <link rel="icon" type="image/png" sizes="512x512" href="./img/favicon/logo-512x512.png">
+  //- <link rel="apple-touch-icon" href="./img/favicon/apple-icon.png">
+  //- <link rel="manifest" href="./img/favicon/manifest.webmanifest" crossorigin="use-credentials">
     //- генерируйте favicon тут - https://realfavicongenerator.net/
     //- в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"
     //- используйте только для шрифта находящегося на первом экране

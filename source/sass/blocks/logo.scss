@@ -1,0 +1,14 @@
+.logo {
+  svg {
+    width: size(200px);
+    height: size(70px);
+    color: $color-default-white;
+  }
+
+  span,
+  a {
+    display: flex;
+    width: inherit;
+    height: inherit;
+  }
+}

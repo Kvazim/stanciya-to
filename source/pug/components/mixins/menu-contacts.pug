@@ -1,0 +1,13 @@
+mixin menu-contacts(options = {})
+  ul.menu-contacts__list
+    li.menu-contacts__item
+      a.menu-contacts__link(href='https://wa.me/+79252313686')
+        +icon('whatsapp', 300, 300).menu-contscts__icon
+        span.menu-contscts__text
+  //- - const tag = options.href ? "a" : "span";
+  //- - const href = options.href || false;
+
+  //- #{tag}(href!=linkUrl,
+  //-   data-scroll-to=link.scrollTo ? link.scrollTo : false,
+  //-   target=link.isExternal ? "_blank" : false,
+  //-   rel=link.isExternal ? "nofollow noopener noreferrer" : false).contacts__link!= link.text
