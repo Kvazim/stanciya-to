@@ -556,7 +556,6 @@ button,
 .no-transition {
   /* stylelint-disable-next-line */
   -webkit-transition: none !important;
-  -o-transition: none !important;
   transition: none !important;
 }
 
@@ -662,7 +661,6 @@ button,
   opacity: 0;
   -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   pointer-events: none;
@@ -735,7 +733,6 @@ button,
   border: none;
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 @media (hover: hover) {
@@ -759,7 +756,6 @@ button,
   height: 20px;
   background-color: #ffffff;
   -webkit-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
   -webkit-mask: url("../img/stack.svg#icon-close");
           mask: url("../img/stack.svg#icon-close");
@@ -782,7 +778,6 @@ button,
 }
 .modal--preload {
   -webkit-transition: none;
-  -o-transition: none;
   transition: none;
 }
 .modal.is-active {
@@ -804,7 +799,6 @@ button,
   border: none;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 .btn--red {
@@ -876,7 +870,6 @@ button,
   border-radius: 5px;
   outline: none;
   -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 @media screen and (max-width: 767px) {
@@ -914,7 +907,6 @@ button,
   color: #ff1553;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 @media screen and (max-width: 767px) {
@@ -1011,7 +1003,6 @@ button,
   height: 28px;
   border: 1.5px solid #2c39f2;
   -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 .custom-toggle--checkbox .custom-toggle__icon::before {
@@ -1026,7 +1017,6 @@ button,
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .custom-toggle--radio .custom-toggle__icon {
@@ -1038,7 +1028,6 @@ button,
   border: 1px solid #2c39f2;
   border-radius: 50%;
   -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 .custom-toggle--radio .custom-toggle__icon::before {
@@ -1054,7 +1043,6 @@ button,
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 .custom-toggle input:checked + .custom-toggle__icon {
@@ -1109,7 +1097,6 @@ button,
           transform: translateY(-50%);
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
-  -o-transition: transform 0.3s ease, opacity 0.3s ease;
   transition: transform 0.3s ease, opacity 0.3s ease;
   transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
   pointer-events: none;
@@ -1130,7 +1117,6 @@ button,
           transform: translateY(-50%);
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
-  -o-transition: transform 0.3s ease, opacity 0.3s ease;
   transition: transform 0.3s ease, opacity 0.3s ease;
   transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
   pointer-events: none;
@@ -1171,7 +1157,6 @@ button,
   outline: none;
   cursor: pointer;
   -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 .custom-select__button:hover {
@@ -1202,7 +1187,6 @@ button,
   visibility: hidden;
   opacity: 0;
   -webkit-transition: visibility 0.3s ease, opacity 0.3s ease;
-  -o-transition: visibility 0.3s ease, opacity 0.3s ease;
   transition: visibility 0.3s ease, opacity 0.3s ease;
 }
 .custom-select__item {
@@ -1210,7 +1194,6 @@ button,
   outline: none;
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .custom-select__item[aria-selected=true] {
@@ -1239,7 +1222,6 @@ button,
   color: #ff1553;
   opacity: 0;
   -webkit-transition: opacity 0.1s ease;
-  -o-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
 }
 .custom-select__text {
@@ -1251,11 +1233,9 @@ button,
   overflow: hidden;
   text-align: left;
   white-space: nowrap;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease 0.1s;
-  -o-transition: opacity 0.3s ease 0.1s;
   transition: opacity 0.3s ease 0.1s;
 }
 .custom-select__text br {
@@ -1270,7 +1250,6 @@ button,
   background-color: #000000;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
-  -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-clip-path: polygon(100% 0, 100% 20%, 50% 100%, 0 20%, 0 0, 50% 80%);
@@ -1478,8 +1457,7 @@ button,
 .input-upload__preview-file-name {
   white-space: nowrap;
   overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 
 .input-upload--file .input-upload__preview-icon {
@@ -1551,7 +1529,6 @@ button,
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
@@ -1567,7 +1544,6 @@ button,
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
-  -o-transition: opacity 0.3s ease, visibility 0.3s ease;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
