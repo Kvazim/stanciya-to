@@ -1,0 +1,12 @@
+mixin link(options = {})
+  - const tag = options.href ? "a" : "span";
+  - const linkUrl = options.href || false;
+  - const icon = options.icon || false;
+  - const scroll = options.scrollTo ? options.scrollTo : false;
+  - const target = options.isExternal ? "_blank" : false;
+  - const rel = options.isExternal ? "nofollow noopener noreferrer" : false;
+
+  #{tag}.link(href=linkUrl, data-scroll-to=scroll, target=target, rel=rel)&attributes(attributes)
+    if(icon)
+      +icon(icon.name, icon.width, icon.height).link__icon
+    span.link__text!= options.text

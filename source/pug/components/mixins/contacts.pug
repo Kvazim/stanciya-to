@@ -1,0 +1,29 @@
+mixin contacts(options = {})
+  -
+    const contactLink = [
+      {
+        href: "https://wa.me/+79252313686",
+        isExternal: true,
+        icon: {
+          name: "whatsapp",
+          width: 30,
+          height: 30,
+        },
+        text:"+7(925)231-36-86",
+      },
+      {
+        href: "+79252313686",
+        isExternal: true,
+        icon: {
+          name: "phone",
+          width: 30,
+          height: 30,
+        },
+        text:"+7(925)231-36-86",
+      }
+    ]
+
+  ul.contacts
+    each item in contactLink
+      li.contacts__item
+        +link(item).contacts__link

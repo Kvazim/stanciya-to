@@ -1,0 +1,11 @@
+.link {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    display: block;
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-right: size(10px);
+  }
+}

@@ -1,25 +1,25 @@
 mixin header(headerMods, currentUrl)
-  -
-    const headerLinks = [
-      {
-        href: "index.html",
-        text: "Главная"
-      },
-      //- {
-      //-   href: "#",
-      //-   text: "Страница 2"
-      //- },
-      //- {
-      //-   href: "#",
-      //-   text: "Страница 3"
-      //- },
-    ]
+  //- -
+  //-   const headerLinks = [
+  //-     {
+  //-       href: "index.html",
+  //-       text: "Главная"
+  //-     },
+  //-     //- {
+  //-     //-   href: "#",
+  //-     //-   text: "Страница 2"
+  //-     //- },
+  //-     //- {
+  //-     //-   href: "#",
+  //-     //-   text: "Страница 3"
+  //-     //- },
+  //-   ]
 
   header.header(class=headerMods)
     .container
       nav.main-nav
         +logo()
-        +menu-contacts()
+        +contacts()
       //- if(currentUrl === "index.html")
       //-   //- lighthouse снимает 10 баллов SEO за <a> без href
       //-   span.header__logo

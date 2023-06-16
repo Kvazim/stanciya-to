@@ -556,6 +556,7 @@ button,
 .no-transition {
   /* stylelint-disable-next-line */
   -webkit-transition: none !important;
+  -o-transition: none !important;
   transition: none !important;
 }
 
@@ -580,22 +581,36 @@ button,
   }
 }
 
-.header {
-  padding: 1.875rem 0;
+.top-wrapper {
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
 @media (max-width: 1023px) {
-  .header {
+  .top-wrapper {
     background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 }
 @media (max-width: 767px) {
-  .header {
+  .top-wrapper {
     background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 }
 
+.header {
+  padding: 1.875rem 0;
+}
+@media (max-width: 1023px) {
+  .header {
+    padding: 1.5625rem 0;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 0.9375rem 0;
+  }
+}
+
 .logo svg {
+  display: block;
   width: 12.5rem;
   height: 4.375rem;
   color: #ffffff;
@@ -605,31 +620,55 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: inherit;
   height: inherit;
 }
 
-.main-nav__list {
+.main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin: 0;
-  margin-right: 20px;
-  margin-left: 60px;
   padding: 0;
-  list-style: none;
 }
-.main-nav__item {
-  margin-right: 20px;
+.contacts__item {
+  list-style-type: none;
+  margin-right: 1.25rem;
 }
-.main-nav__link {
+.contacts__item:last-child {
+  margin-right: 0;
+}
+.contacts__link {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 1.6875rem;
+  letter-spacing: 0.03em;
   color: #ffffff;
 }
-.main-nav__link.is-active {
-  opacity: 0.6;
+.contacts__link .link__icon {
+  color: #40c351;
 }
-.main-nav__toggle {
-  display: none;
+.contacts__link:hover, .contacts__link:focus {
+  color: #102654;
+}
+.contacts__link:hover .link__icon, .contacts__link:focus .link__icon {
+  opacity: 0.8;
 }
 
 .footer {
@@ -661,6 +700,7 @@ button,
   opacity: 0;
   -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   pointer-events: none;
@@ -733,6 +773,7 @@ button,
   border: none;
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 @media (hover: hover) {
@@ -756,6 +797,7 @@ button,
   height: 20px;
   background-color: #ffffff;
   -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
   -webkit-mask: url("../img/stack.svg#icon-close");
           mask: url("../img/stack.svg#icon-close");
@@ -778,6 +820,7 @@ button,
 }
 .modal--preload {
   -webkit-transition: none;
+  -o-transition: none;
   transition: none;
 }
 .modal.is-active {
@@ -799,6 +842,7 @@ button,
   border: none;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 .btn--red {
@@ -870,6 +914,7 @@ button,
   border-radius: 5px;
   outline: none;
   -webkit-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 @media screen and (max-width: 767px) {
@@ -907,6 +952,7 @@ button,
   color: #ff1553;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 @media screen and (max-width: 767px) {
@@ -1003,6 +1049,7 @@ button,
   height: 28px;
   border: 1.5px solid #2c39f2;
   -webkit-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 .custom-toggle--checkbox .custom-toggle__icon::before {
@@ -1017,6 +1064,7 @@ button,
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .custom-toggle--radio .custom-toggle__icon {
@@ -1028,6 +1076,7 @@ button,
   border: 1px solid #2c39f2;
   border-radius: 50%;
   -webkit-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 .custom-toggle--radio .custom-toggle__icon::before {
@@ -1043,6 +1092,7 @@ button,
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 .custom-toggle input:checked + .custom-toggle__icon {
@@ -1097,6 +1147,7 @@ button,
           transform: translateY(-50%);
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease, opacity 0.3s ease;
   transition: transform 0.3s ease, opacity 0.3s ease;
   transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
   pointer-events: none;
@@ -1117,6 +1168,7 @@ button,
           transform: translateY(-50%);
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease, opacity 0.3s ease;
   transition: transform 0.3s ease, opacity 0.3s ease;
   transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
   pointer-events: none;
@@ -1157,6 +1209,7 @@ button,
   outline: none;
   cursor: pointer;
   -webkit-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 .custom-select__button:hover {
@@ -1187,6 +1240,7 @@ button,
   visibility: hidden;
   opacity: 0;
   -webkit-transition: visibility 0.3s ease, opacity 0.3s ease;
+  -o-transition: visibility 0.3s ease, opacity 0.3s ease;
   transition: visibility 0.3s ease, opacity 0.3s ease;
 }
 .custom-select__item {
@@ -1194,6 +1248,7 @@ button,
   outline: none;
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .custom-select__item[aria-selected=true] {
@@ -1222,6 +1277,7 @@ button,
   color: #ff1553;
   opacity: 0;
   -webkit-transition: opacity 0.1s ease;
+  -o-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
 }
 .custom-select__text {
@@ -1233,9 +1289,11 @@ button,
   overflow: hidden;
   text-align: left;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease 0.1s;
+  -o-transition: opacity 0.3s ease 0.1s;
   transition: opacity 0.3s ease 0.1s;
 }
 .custom-select__text br {
@@ -1250,6 +1308,7 @@ button,
   background-color: #000000;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-clip-path: polygon(100% 0, 100% 20%, 50% 100%, 0 20%, 0 0, 50% 80%);
@@ -1457,7 +1516,8 @@ button,
 .input-upload__preview-file-name {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .input-upload--file .input-upload__preview-icon {
@@ -1529,6 +1589,7 @@ button,
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
@@ -1544,6 +1605,7 @@ button,
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
+  -o-transition: opacity 0.3s ease, visibility 0.3s ease;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
@@ -1651,6 +1713,21 @@ button,
   right: 0;
   bottom: -5px;
   color: #ff0000;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.link__icon {
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-right: 0.625rem;
 }
 
 /* @mixin hover-focus {
